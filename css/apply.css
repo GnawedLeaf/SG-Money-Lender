@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@font-face {
+    font-family: 'Harmony';
+    src: url(fonts\HARMONY.otf) format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Rework';
+    src: url(fonts\rework-regular.ttf) format('truetype');
+    font-weight: normal;
+}
+
+::selection {
+    color: white;
+    background: #C0A02C;
+}
+
+
+.row {
+    width: 100%;
+}
+
+body {
+    background-color: #427E79;
+    margin: 0%;
+    padding: 0%;
+
+}
+
+
+#fixedheader {
+    position: fixed;
+}
+
+.header {
+    margin: 0;
+    z-index: 100;
+    width: 100%;
+    padding: 0.5%;
+
+
+    background-color: white;
+    clear: both;
+
+    transition-duration: 0.4s;
+}
+
+
+.navbtn {
+    text-decoration: none;
+    color: black;
+    font-family: 'HARMONY';
+    cursor: pointer;
+    font-size: 1.2vw;
+}
+
+.navbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.navbtn:hover {
+    color: #427E79;
+
+}
+
+.logo {
+    text-decoration: none;
+    color: black;
+    font-family: 'HARMONY';
+    font-size: 2.7vw;
+    transition: all 0.3s linear;
+
+}
+
+.logo:hover {
+    color: #C0A02C;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: black;
+}
+
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #427E79;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+
+#apply {
+    font-family: 'harmony';
+
+
+    font-size: 96px;
+    color: white;
+    /*margin-top: 8%;*/
+}
+
+#applysubtext {
+    color: white;
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+
+
+}
+
+.form {
+    font-family: 'Montserrat';
+    margin: 20%;
+    margin-top: 2%;
+    margin-bottom: 6%;
+    background-color: white;
+    padding: 5%;
+    padding-top: 3%;
+    border-radius: 10px;
+    height: auto;
+
+
+}
+
+.dropdown-toggle {
+    width: 100%;
+    background-color: white;
+    color: #6C757D;
+    text-align: left;
+    border-color: #CED4DA;
+}
+
+.container {
+    width: 100%;
+}
+
+#dropdownMenuButton1:hover {
+    color: white;
+    background-color: #427E79;
+}
+
+#dropdownMenuButton1:focus {
+    color: white;
+    background-color: #427E79;
+}
+
+#dropdownMenuButton2:hover {
+    color: white;
+    background-color: #427E79;
+}
+
+#dropdownMenuButton2:focus {
+    color: white;
+    background-color: #427E79;
+}
+
+
+#submitbtn {
+    margin-top: 50%;
+    padding: 10%;
+    padding-left: 20%;
+    padding-right: 20%;
+    color: white;
+    background-color: #427E79;
+    border: none;
+    font-size: 25px;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+}
+
+#submitbtn:hover {
+    background-color: #C0A02C;
+
+}
+
+.dot {
+    height: 250px;
+    width: 250px;
+    background-color: #C0A02C;
+    border-radius: 50%;
+    display: inline-block;
+    z-index: -1;
+
+
+
+    animation: dotty 0.8s ease-out;
+
+}
+
+@keyframes dotty {
+    0% {
+
+        height: 600px;
+        width: 600px;
+
+    }
+
+}
+
+
+
+
+.footer {
+
+    font-family: 'Montserrat';
+}
+
+#modalclosebtn {
+    background-color: #427E79;
+    border: none;
+    transition-duration: 0.4s;
+}
+
+#modalclosebtn:hover {
+    background-color: #C0A02C;
+    color: white;
+}
+
+.form-line-active input:focus,
+.form-line-active textarea:focus {
+    border: 1px solid green !important;
+    box-shadow: 0 0 3px green !important;
+    -moz-box-shadow: 0 0 3px green !important;
+    -webkit-box-shadow: 0 0 3px green !important;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline-offset: 0px !important;
+    outline: none !important;
+}
